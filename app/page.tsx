@@ -23,14 +23,7 @@ export default function PromInvitePage() {
 
       <PhotoUpload onUploadComplete={handleUploadComplete} />
 
-      <PhotoGallery refreshKey={refreshKey} />
-
-      {/* Footer */}
-      <footer className="py-8 px-4 text-center">
-        <p className="text-muted-foreground text-sm flex items-center justify-center gap-1">
-          Made with <Heart className="w-4 h-4 text-primary fill-primary" /> for Prom 2026
-        </p>
-      </footer>
+      {' // <PhotoGallery refreshKey={refreshKey} /> '}
     </main>
   )
 }

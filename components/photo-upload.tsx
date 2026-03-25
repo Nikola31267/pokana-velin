@@ -106,13 +106,13 @@ export function PhotoUpload({ onUploadComplete }: PhotoUploadProps) {
         <div className="text-center mb-8">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full text-primary text-sm font-medium mb-4">
             <ImagePlus className="w-4 h-4" />
-            <span>Share Your Memories</span>
+            <span>Помогни ми да си спомня</span>
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-3">
-            Upload Prom Photos
+            Качи снимки от бала
           </h2>
           <p className="text-muted-foreground">
-            Share your favorite moments from the night with everyone
+            Прикачи любимите ти моменти от бала тук
           </p>
         </div>
 
@@ -157,7 +157,8 @@ export function PhotoUpload({ onUploadComplete }: PhotoUploadProps) {
                 </p>
                 <Button
                   onClick={handleUpload}
-                  disabled={uploading || uploadSuccess}
+                  // disabled={uploading || uploadSuccess}
+                  disabled
                   className="gap-2"
                 >
                   {uploading ? (
@@ -198,6 +199,7 @@ export function PhotoUpload({ onUploadComplete }: PhotoUploadProps) {
                 accept="image/*"
                 onChange={handleFileSelect}
                 className="hidden"
+                disabled
               />
             </label>
           )}
