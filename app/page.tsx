@@ -3,6 +3,7 @@ import { useState } from "react"
 import { HeroSection } from "@/components/hero-section"
 import { PhotoUpload } from "@/components/photo-upload"
 import { PhotoGallery } from "@/components/photo-gallery"
+import { LocationSection } from "@/components/location-section"
 import { Heart } from "lucide-react"
 
 export default function PromInvitePage() {
@@ -20,6 +21,7 @@ export default function PromInvitePage() {
       </div>
       <PhotoUpload onUploadComplete={handleUploadComplete} />
       {/* <PhotoGallery refreshKey={refreshKey} /> */}
+      <LocationSection />
     </main>
   )
 }
