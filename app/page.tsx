@@ -1,5 +1,4 @@
 "use client"
-
 import { useState } from "react"
 import { HeroSection } from "@/components/hero-section"
 import { PhotoUpload } from "@/components/photo-upload"
@@ -16,15 +15,11 @@ export default function PromInvitePage() {
   return (
     <main className="min-h-screen bg-background">
       <HeroSection />
-
       <div className="max-w-4xl mx-auto px-4 py-8">
         <div className="h-px bg-border" />
       </div>
-
       <PhotoUpload onUploadComplete={handleUploadComplete} />
-
-      {' // <PhotoGallery refreshKey={refreshKey} /> '}
+      {/* <PhotoGallery refreshKey={refreshKey} /> */}
     </main>
   )
 }
-
